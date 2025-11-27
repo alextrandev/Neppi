@@ -181,26 +181,50 @@ export function OngoingEvent({
           </div>
         </div>
 
-        <div
-          className="text-center p-2 rounded-xl"
-          style={{
-            background: "rgba(255, 255, 255, 0.15)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            boxShadow:
-              "inset 0 1px 2px rgba(255, 255, 255, 0.2)",
-          }}
-        >
+        <div className="grid grid-cols-2 gap-4 mb-4">
           <div
-            className="text-xl mb-0.5"
-            style={{ color: "#FFFFFF" }}
+            className="text-center p-2 rounded-xl"
+            style={{
+              background: "rgba(255, 255, 255, 0.15)",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow:
+                "inset 0 1px 2px rgba(255, 255, 255, 0.2)",
+            }}
           >
-            20
+            <div
+              className="text-xl mb-0.5"
+              style={{ color: "#FFFFFF" }}
+            >
+              20
+            </div>
+            <div
+              className="text-xs"
+              style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "14px" }}
+            >
+              Photos Captured
+            </div>
           </div>
           <div
-            className="text-xs"
-            style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "14px" }}
+            className="text-center p-2 rounded-xl"
+            style={{
+              background: "rgba(255, 255, 255, 0.15)",
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+              boxShadow:
+                "inset 0 1px 2px rgba(255, 255, 255, 0.2)",
+            }}
           >
-            Photos Captured
+            <div
+              className="text-xl mb-0.5"
+              style={{ color: "#FFFFFF" }}
+            >
+              10
+            </div>
+            <div
+              className="text-xs"
+              style={{ color: "rgba(255, 255, 255, 0.85)", fontSize: "14px" }}
+            >
+              Photos Left
+            </div>
           </div>
         </div>
 
