@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { GlassCard } from "../GlassCard";
 import { GradientButton } from "../GradientButton";
-import { ProgressBar } from "../ProgressBar";
 import { StatusBar } from "../StatusBar";
 import {
   Sparkles,
@@ -46,20 +45,20 @@ export function PromptFilter({
   const [filterProcessingComplete, setFilterProcessingComplete] = useState(false);
 
   const presets = [
-    { id: "vintage", label: "Vintage Film", emoji: "📷" },
-    { id: "moody", label: "Moody Dark", emoji: "🌙" },
-    { id: "bright", label: "Bright & Airy", emoji: "☀️" },
+    { id: "party", label: "Party", emoji: "🎉" },
+    { id: "wanted", label: "Wanted Poster", emoji: "📰" },
+    { id: "horror", label: "Horror", emoji: "👻" },
   ];
 
   const handlePresetClick = (preset: string) => {
     setSelectedPreset(preset);
     const presetTexts: { [key: string]: string } = {
-      vintage:
-        "Warm tones, film grain, nostalgic vintage aesthetic with soft focus",
-      moody:
-        "Dark and moody atmosphere, deep shadows, cinematic contrast",
-      bright:
-        "Bright and airy feel, soft pastels, ethereal light",
+      party:
+        "Fun and festive atmosphere, vibrant colors, party lights and energy",
+      wanted:
+        "Old west wanted poster style, black and white, dramatic shadows, rugged look",
+      horror:
+        "Eerie and spooky, dark tones, ghostly effects, horror movie aesthetic",
     };
     setPrompt(presetTexts[preset] || "");
     
